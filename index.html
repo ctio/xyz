@@ -1,13 +1,331 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>XYZ Diagnostics</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <h1>Hello world</h1>
-</body>
+    <div class="alert text-center mb-0 custom" role="alert"
+        style="line-height: 32px;width:100%;border-radius:0%;color: #a81d5e;background-color: #ffe6f2;padding: 8px; font-weight: 500;">
+        <strong><span style="background-color: #a81d5e;padding: 3.5px;margin-right: 4px;" class="shadow rounded text-white">New</span> SARS-CoV-2 RT PCR</strong> test with home sample collection<span id="extra-alert-message"> is now available! Call 
+        <a class="rounded phone" style="padding:3.5px;border: 1px solid #a81d5e;color: #a81d5e;text-decoration: none;font-weight: bold;" href="tel:040-44442424">040-4444 2424</a> or text us on Whatsapp to
+        book your test.
+        </span>
+        <div id="more">
+            <span>is now available</span>
+        </div>
+    </div>
+
+    <div class="head" style="z-index:10;position: sticky;top:0;">
+        
+        <!-- Top navbar -->
+
+        <!-- Top navbar/Left section -->
+        <ul class="nav" id="" style="display:inline-block;">
+            <li id="hidden-menu" class="nav-item">
+                <a class="btn rounded shadow" style="background-color: #c52f75; padding: 8px 10px;" href="#"><i style="font-size: 25px;" class="fa fa-bars"></i>
+                </a>
+            </li>
+            <li id="mob-nav-height" class="nav-item" style="padding: 0; ">
+                <a href="">
+                    <strong class="btn text-white py-3" style="font-size: 20px; font-weight: bold;">Example Logo</strong>
+                </a>
+            </li>
+            <div id="display">
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle shadow btn" style="background-color: #c52f75;" data-bs-toggle="dropdown" role="button">
+                        <i class="fa fa-map-marker" style="margin-right:10px;font-size: 20px;"></i>Location
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" style="padding-left: 5px">
+                    <button class="btn shadow" style="background-color: #c52f75;">
+                        <a class="" href="#">
+                            <i class="fa fa-search" style="margin-right:10px;font-size: 17px;"></i>Find Lab
+                        </a>
+                    </button>
+                </li>
+            </div>
+        </ul>
+
+        <!-- Top navbar/Right section -->
+        
+        <!-- Mobile Top navbar/Right section -->
+        <div id="mobile-right-navbar" style="margin-left: 40px;">
+            <div class="">
+                <li id="download" class="nav-item" style="padding: 5px;">
+                    <button style="background-color:#069cc1;padding: 6px; color:white;" class="btn">Download Reports</button>
+                </li>
+                <li class="nav-item" class="nav-item" style="padding: 5px;">
+                    <button class="btn text-white shadow" style="padding: 6.5px;background: #c52f75;" href="">Login</button>
+                </li>
+                <li class="nav-item" class="nav-item" style="padding: 5px;">
+                    <button class="btn text-white shadow"
+                        style="padding:5px 10px;background: #c52f75; border-radius: 100%; font-size: 18px;" href=""><i
+                            class="fa fa-shopping-cart"></i></button>
+                </li>
+            </div>
+        </div>
+
+        <!-- Main Top navbar/Right section -->
+        <div style="display:inline-block; margin-left: 235px;">
+            <div id="display2">
+            <li class="nav-item" style="padding: 15px;">
+                <button style="background-color:#069cc1; color:white;" class="btn py-2">Download Reports</button>
+            </li>
+            <li class="nav-item" class="nav-item" style="padding: 10px;">
+                <button class="btn text-white py-2 shadow" style="background: #c52f75;" href="">Login</button>
+            </li>
+            <li class="nav-item" class="nav-item" style="padding-left: 30px;">
+                <button class="btn text-white shadow"
+                    style="padding:5px 10px;background: #c52f75; border-radius: 100%; font-size: 18px;" href=""><i
+                        class="fa fa-shopping-cart"></i></button>
+            </li>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Blue Navbar -->
+    <div id="mob-hidden-bt-menu">
+        <ul class="nav justify-content-center" style="background-color: #069cc1;z-index: 2;position: sticky;top: 118px">
+            <li class="nav-item">
+                <a class="nav-link text-white py-3" href="">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white py-3 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">FOR PATIENTS
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white py-3 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">DEPARTMENTS</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white py-3" href="">BOOK A TEST</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white py-3" href="">HEALTH CHECKUP PACKAGES</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white py-3 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">NEWS & MEDIA</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="input-group py-2" style="margin-left: 20px;">
+                    <input type="text" style="box-shadow: none;border: none;" class="form-control py-2"
+                        placeholder="Search for a test">
+                    <span style="background-color: #c52f75;border: none;color: white;" class="input-group-text"
+                        id="basic-addon1"><i class="fa fa-search"></i></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Mobile - Bottom Blue Navbar -->
+    <ul id="mob-show-bt-menu" class="nav justify-content-center" style="background-color: #069cc1;position: sticky;top:85px;z-index: 2;">
+        <li class="dropdown" style="display: inline-block;width: 25%;">
+            <a class="nav-link text-white my-2 mx-1 dropdown-toggle btn shadow" style="background-color: #09b3dd;" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false"><i class="fa fa-map-marker" style="margin-right:10px;font-size: 20px;"></i>Location</a>  
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </li>
+
+        <!-- Search tests -->
+
+        <li class="mx-1" style="display: inline-block;width: 72%;">
+            <div>
+                <div class="input-group">
+                    <input type="text" style="box-shadow: none;border: none;" class="form-control py-2"
+                        placeholder="Search for a test">
+                    <span style="background-color: #c52f75;border: none;color: white;" class="input-group-text"
+                        id="basic-addon1"><i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+
+    <!-- Carousel -->
+    <div id="carousel" style="background-color: #ebebeb;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" style="background-color:#c52f75;" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0" class="active"></button>
+                <button type="button" style="background-color:#c52f75;" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"></button>
+                <button type="button" style="background-color:#c52f75;" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"></button>
+            </div>
+            <div id="carousel-inner" class="carousel-inner shadow">
+                <div class="carousel-item active">
+                    <img src="https://www.apollodiagnostics.in/images/home/banner/Banner_Diagnostics.png"
+                        class="w-100 d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.apollodiagnostics.in/images/home/banner/Web-banner_Delhi.jpg"
+                        class="w-100 d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.apollodiagnostics.in/images/home/banner/Comprehensive_Home%20banner.jpg"
+                        class="w-100 d-block" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACCREDITATIONS -->
+
+    <div style="background-color: white;">
+        <div class="container py-5">
+            <div class="h5 text-center text-secondary py-3">ACCREDITATIONS</div>
+            <div class="row py-2 mb-2 mt-2" style="margin-right:10%; margin-left: 10%;">
+                <div class="col-12 col-sm-2">
+                    <div style="width: 190px; margin: 20px auto;">
+                        <img src="https://apollodiagnostics.in/images/accreditations/accreditations_logo1.jpg" alt="1"></div>
+                    </div>
+                <div class="col-12 col-sm-2">
+                    <div style="width: 65px; margin: 20px auto;">
+                        <img src="https://apollodiagnostics.in/images/accreditations/accreditations_logo2.jpg" alt="2"></div>
+                    </div>
+                <div class="col-12 col-sm-2">
+                    <div style="width: 70px; margin: 20px auto;">
+                        <img src="https://apollodiagnostics.in/images/accreditations/accreditations_logo3.jpg" alt="3"></div>
+                    </div>
+                <div class="col-12 col-sm-2">
+                    <div style="width: 100px; margin: 20px auto;">
+                        <img src="https://apollodiagnostics.in/images/accreditations/accreditations_logo4.jpg" alt="4"></div>
+                    </div>
+                <div class="col-12 col-sm-4">
+                    <div class="row shadow mt-2">
+                        <div class="col-4 text-white p-2" 
+                            style="text-align:center;border-top-left-radius: 5px;border-bottom-left-radius: 5px;background: #a81d5e;">
+                                <i class="fa fa-star-o" style="font-size: 100px;color: #069cc1;"></i>
+                        </div>
+                        <div class="col-8 text-white p-2" style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;background: #069cc1;">
+                            <span style="font-size: 15px;"><strong style="padding-right: 1px;">Location:</strong> Old Bowenpally, Hyderabad</span>
+                            <div>
+                            <i style="color: #a81d5e;" class="fa fa-star"></i>
+                            <i style="color: #a81d5e;" class="fa fa-star"></i>
+                            <i style="color: #a81d5e;" class="fa fa-star"></i>
+                            <i style="color: #a81d5e;" class="fa fa-star"></i>
+                            <i style="color: #a81d5e;" class="fa fa-star-o"></i>
+                            
+                            <span style="font-size: 15px;color: #ffffff;">(100)</span>
+                            </div>
+                            <span style="font-size: 13px;">Google reviews </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOST COMMON TESTS -->
+    <div style="background-color: #ebebeb;">
+        <div class="container pt-5 py-4">
+            <div class="h5 text-center text-secondary p-2">MOST COMMON TESTS</div>
+            <div class="row py-4 mt-2 text-center h6 text-secondary" style="margin: auto 85px;">
+                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3 p-4 bg-white" style="width: 150px;" src="https://apollodiagnostics.in/images/home/conditions/thyroid.jpg" alt="1">
+                    <p>THYROID</p>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3" style="width: 150px;" 
+                    src="https://apollodiagnostics.in/images/home/conditions/heart.jpg" alt="2">
+                    <p>HEART</p>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3" style="width: 150px;" 
+                    src="https://apollodiagnostics.in/images/home/conditions/liver.jpg" alt="3">
+                    <p>LIVER</p>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3" style="width: 150px;" 
+                    src="https://apollodiagnostics.in/images/home/conditions/lungs.jpg" alt="4">
+                    <p>LUNGS</p>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3" style="width: 150px;" 
+                    src="https://apollodiagnostics.in/images/home/conditions/infertility.jpg" alt="4">
+                    <p>INFERTILITY</p>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3" style="width: 150px;" 
+                    src="https://apollodiagnostics.in/images/home/conditions/kidney.jpg" alt="4">
+                    <p>KIDNEY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- contact buttons -->
+    <div>
+        <div class="shadow">
+            <a href="#">
+                <i id="phone-button" style="z-index:1;position: fixed;padding:12px 15px;font-size: 32px; background-color:#097edd;color: white;border-radius: 100%;"
+                    class="shadow card fa fa-phone">
+                </i>
+            </a>
+        </div>
+        <div class="shadow">
+            <a href="#">
+                <i id="whatsapp-button" style="z-index:1;position: fixed;padding:8px 10px;font-size: 40px; background-color:#25D366;color: white;border-radius: 100%;"
+                    class="shadow card fa fa-whatsapp">
+                </i>
+            </a>
+        </div>
+    </div>
+    
+    </body>
 </html>
