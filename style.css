@@ -180,7 +180,7 @@ body {
     
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 560px) {
     #display {
         display:none;
         margin-left: 0;
@@ -222,28 +222,26 @@ body {
         font-size: 11px;
     }
     #whatsapp-button{
-        bottom: 40px;
-        right: 45px;
+        bottom: 30px;
+        right: 30px;
     }
     #phone-button{
-        bottom: 125px; 
-        right: 45px;
+        bottom: 110px; 
+        right: 30px;
     }
     #carouselExampleIndicators{
-        margin: 0 15%;
+        margin: 0;
     }
     #carousel{
-        padding: 20px 0;
+        padding: 0;
     }
     #carousel-inner {
-        width: 86%;
-        margin: auto;
-        border-radius: 5px;
+        width: 100%;
     }
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
     
     #mobile-right-navbar{
         margin-left: 0;
