@@ -19,9 +19,13 @@
 <body>
     <div class="alert text-center mb-0 custom" role="alert"
         style="line-height: 32px;width:100%;border-radius:0%;color: #a81d5e;background-color: #ffe6f2;padding: 8px; font-weight: 500;">
-        <strong><span style="background-color: #a81d5e;padding: 3.5px;margin-right: 4px;" class="shadow rounded text-white">New</span> XYZ </strong> test with home sample collection<span id="extra-alert-message"> is now available! Call 
-        <a class="rounded phone" style="padding:3.5px;border: 1px solid #a81d5e;color: #a81d5e;text-decoration: none;font-weight: bold;" href="tel:040-44442424">0000000000</a> or text us on Whatsapp to
-        book your test.
+        <strong><span style="background-color: #a81d5e;padding: 3.5px;margin-right: 4px;"
+                class="shadow rounded text-white">New</span> XYZ </strong> test with home sample collection<span
+            id="extra-alert-message"> is now available! Call
+            <a class="rounded phone"
+                style="padding:3.5px;border: 1px solid #a81d5e;color: #a81d5e;text-decoration: none;font-weight: bold;"
+                href="tel:040-44442424">0000000000</a> or text us on Whatsapp to
+            book your test.
         </span>
         <div id="more">
             <span>is now available</span>
@@ -29,23 +33,26 @@
     </div>
 
     <div class="head" style="z-index:10;position: sticky;top:0;">
-        
+
         <!-- Top navbar -->
 
         <!-- Top navbar/Left section -->
-        <ul class="nav" id="" style="display:inline-block;">
             <li id="hidden-menu" class="nav-item">
-                <a class="btn rounded shadow" style="background-color: #c52f75; padding: 8px 10px;" href="#"><i style="font-size: 25px;" class="fa fa-bars"></i>
+                <a class="btn rounded shadow" style="background-color: #c52f75; padding: 8px 10px;" href="#"><i
+                        style="font-size: 25px;" class="fa fa-bars"></i>
                 </a>
             </li>
             <li id="mob-nav-height" class="nav-item" style="padding: 0; ">
                 <a href="">
-                    <strong class="btn text-white py-3" style="font-size: 20px; font-weight: bold;">Example Logo</strong>
+                    <span id="logo123" class="btn py-3" style="color:rgb(231, 231, 231);font-size: 27px; font-weight: 400;">Example
+                        Logo
+                    </span>
                 </a>
             </li>
             <div id="display">
                 <li class="dropdown nav-item">
-                    <a href="#" class="dropdown-toggle shadow btn" style="background-color: #c52f75;" data-bs-toggle="dropdown" role="button">
+                    <a href="#" class="dropdown-toggle shadow btn" style="background-color: #c52f75;"
+                        data-bs-toggle="dropdown" role="button">
                         <i class="fa fa-map-marker" style="margin-right:10px;font-size: 20px;"></i>Location
                     </a>
                     <ul class="dropdown-menu">
@@ -69,38 +76,46 @@
         </ul>
 
         <!-- Top navbar/Right section -->
-        
+
         <!-- Mobile Top navbar/Right section -->
         <div id="mobile-right-navbar" style="margin-left: 40px;">
             <div class="">
                 <li id="download" class="nav-item" style="padding: 5px;">
-                    <button style="background-color:#069cc1;padding: 6px; color:white;" class="btn">Download Reports</button>
+                    <button style="background-color:#069cc1;padding: 6px; color:white;" class="btn">Download
+                        Reports</button>
                 </li>
-                <li class="nav-item" class="nav-item" style="padding: 5px;">
-                    <button class="btn text-white shadow" style="padding: 6.5px;background: #c52f75;" href="">Login</button>
+                <li id="login" class="nav-item" style="padding: 5px;">
+                    <button class="btn text-white shadow" style="padding: 6.5px;background: #c52f75;"
+                        href="">Login</button>
                 </li>
-                <li class="nav-item" class="nav-item" style="padding: 5px;">
-                    <button class="btn text-white shadow"
-                        style="padding:5px 10px;background: #c52f75; border-radius: 100%; font-size: 18px;" href=""><i
-                            class="fa fa-shopping-cart"></i></button>
+                <li id="loginIcon" class="nav-item">
+                    <button class="btn text-white" style="padding:5px 11px;background: #c52f75; border-radius: 100%; font-size: 18px;"
+                        href=""><i class="fa fa-sign-in"></i></button>
+                </li>
+                <li id="cartItem" class="nav-item" class="nav-item">
+                    <button id="cartBtn" class="btn text-white"
+                        style="padding:5px 10px;background: #c52f75; border-radius: 100%; font-size: 18px;">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
                 </li>
             </div>
         </div>
 
         <!-- Main Top navbar/Right section -->
-        <div style="display:inline-block; margin-left: 235px;">
+        <div style="float: right;">
             <div id="display2">
-            <li class="nav-item" style="padding: 15px;">
-                <button style="background-color:#069cc1; color:white;" class="btn py-2">Download Reports</button>
-            </li>
-            <li class="nav-item" class="nav-item" style="padding: 10px;">
-                <button class="btn text-white py-2 shadow" style="background: #c52f75;" href="">Login</button>
-            </li>
-            <li class="nav-item" class="nav-item" style="padding-left: 30px;">
-                <button class="btn text-white shadow"
-                    style="padding:5px 10px;background: #c52f75; border-radius: 100%; font-size: 18px;" href=""><i
-                        class="fa fa-shopping-cart"></i></button>
-            </li>
+                <li id="downloadReports" class="nav-item" style="padding: 15px;">
+                    <button style="background-color:#069cc1; color:white;" class="btn py-2">Download Reports</button>
+                </li>
+                <li id="loginBtn" class="nav-item" class="nav-item" style="padding: 10px;">
+                    <button class="btn text-white py-2 shadow" style="background: #c52f75;" href="">Login</button>
+                </li>
+                <li class="nav-item" class="nav-item" style="padding-left: 30px;">
+                    <button class="btn text-white shadow"
+                        style="padding:5px 10px;background: #c52f75; border-radius: 100%; font-size: 18px;" href=""><i
+                            class="fa fa-shopping-cart"></i>
+                    </button>
+                </li>
             </div>
         </div>
 
@@ -112,7 +127,7 @@
             <li class="nav-item">
                 <a class="nav-link text-white py-3" href="">HOME</a>
             </li>
-            
+
             <li class="nav-item">
                 <a class="nav-link text-white py-3" href="">BOOK A TEST</a>
             </li>
@@ -172,10 +187,17 @@
     </div>
 
     <!-- Mobile - Bottom Blue Navbar -->
-    <ul id="mob-show-bt-menu" class="nav justify-content-center" style="background-color: #069cc1;position: sticky;top:85px;z-index: 2;">
-        <li class="dropdown" style="display: inline-block;width: 25%;">
-            <a class="nav-link text-white my-2 mx-1 dropdown-toggle btn shadow" style="background-color: #09b3dd;" data-bs-toggle="dropdown" href="#" role="button"
-                aria-expanded="false"><i class="fa fa-map-marker" style="margin-right:10px;font-size: 20px;"></i>Location</a>  
+    <ul id="mob-show-bt-menu" class="container" style="background-color: #069cc1;position: sticky;top:85px;z-index: 2;">
+        
+        <div class="row">
+        <div class="dropdown col-3" style="padding-right: 0; padding-left: 4px;width: 70px;">
+            <a class="nav-link text-white my-2 mx-1 px-0 dropdown-toggle btn shadow" style="padding:7px;background-color: #09b3dd;"
+                data-bs-toggle="dropdown" href="#" role="button">
+                <i class="fa fa-map-marker"
+                    style="margin-right:10px;font-size: 23px;width: 3px;">
+                </i>
+                <span class="hideLocationText">Location</span>
+            </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -185,13 +207,13 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Separated link</a></li>
             </ul>
-        </li>
+        </div>
 
         <!-- Search tests -->
 
-        <li class="mx-1" style="display: inline-block;width: 72%;">
+        <div class="col mt-2" style="padding-left: 2px;">
             <div>
-                <div class="input-group">
+                <div class="input-group"> 
                     <input type="text" style="box-shadow: none;border: none;" class="form-control py-2"
                         placeholder="Search for a test">
                     <span style="background-color: #c52f75;border: none;color: white;" class="input-group-text"
@@ -199,9 +221,11 @@
                     </span>
                 </div>
             </div>
-        </li>
+        </div>
+
+        </div>
     </ul>
-    
+
 
     <!-- Carousel -->
     <div id="carousel" style="background-color: #ebebeb;">
@@ -216,16 +240,13 @@
             </div>
             <div id="carousel-inner" class="carousel-inner shadow text-center">
                 <div class="carousel-item active">
-                    <img src="" style="padding: 190px;width: 20px;"
-                        class="" alt="image">
+                    <img src="./1.jpg" style="width: 100%;" class="" alt="image">
                 </div>
                 <div class="carousel-item">
-                    <img src="" style="padding: 190px;width: 20px;"
-                        class="" alt="image">
+                    <img src="./2.jpg" style="width: 100%;" class="" alt="image">
                 </div>
                 <div class="carousel-item">
-                    <img src="" style="padding: 190px;width: 20px;"
-                        class="" alt="image">
+                    <img src="./3.jpg" style="width: 100%;" class="" alt="image">
                 </div>
             </div>
         </div>
@@ -239,36 +260,42 @@
             <div class="row py-2 mb-2 mt-2" style="margin-right:10%; margin-left: 10%;">
                 <div class="col-12 col-sm-2">
                     <div class="text-center my-5">
-                        <img src="" alt="image"></div>
+                        <img src="" alt="image">
                     </div>
+                </div>
                 <div class="col-12 col-sm-2">
                     <div class="text-center my-5">
-                        <img src="" alt="image"></div>
+                        <img src="" alt="image">
                     </div>
+                </div>
                 <div class="col-12 col-sm-2">
                     <div class="text-center my-5">
-                        <img src="" alt="image"></div>
+                        <img src="" alt="image">
                     </div>
+                </div>
                 <div class="col-12 col-sm-2">
                     <div class="text-center my-5">
-                        <img src="" alt="image"></div>
+                        <img src="" alt="image">
                     </div>
+                </div>
                 <div class="col-12 col-sm-4">
                     <div class="row shadow mt-2">
-                        <div class="col-4 text-white p-2" 
+                        <div class="col-4 text-white p-2"
                             style="text-align:center;border-top-left-radius: 5px;border-bottom-left-radius: 5px;background: #a81d5e;">
-                                <i class="fa fa-star-o" style="width: 100%;font-size:450%;color: #069cc1;"></i>
+                            <i class="fa fa-star-o" style="width: 100%;font-size:450%;color: #069cc1;"></i>
                         </div>
-                        <div class="col-8 text-white p-2" style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;background: #069cc1;">
-                            <span style="font-size: 15px;"><strong style="padding-right: 1px;">Location:</strong> XYZ area, XYZ city</span>
+                        <div class="col-8 text-white p-2"
+                            style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;background: #069cc1;">
+                            <span style="font-size: 15px;"><strong style="padding-right: 1px;">Location:</strong> XYZ
+                                area, XYZ city</span>
                             <div>
-                            <i style="color: #ffd000;" class="fa fa-star"></i>
-                            <i style="color: #ffd000;" class="fa fa-star"></i>
-                            <i style="color: #ffd000;" class="fa fa-star"></i>
-                            <i style="color: #ffd000;" class="fa fa-star"></i>
-                            <i style="color: #ffd000;" class="fa fa-star-o"></i>
-                            
-                            <span style="font-size: 15px;color: #ffffff;">(100)</span>
+                                <i style="color: #ffd000;" class="fa fa-star"></i>
+                                <i style="color: #ffd000;" class="fa fa-star"></i>
+                                <i style="color: #ffd000;" class="fa fa-star"></i>
+                                <i style="color: #ffd000;" class="fa fa-star"></i>
+                                <i style="color: #ffd000;" class="fa fa-star-o"></i>
+
+                                <span style="font-size: 15px;color: #ffffff;">(100)</span>
                             </div>
                             <span style="font-size: 13px;">XYZ reviews </span>
                         </div>
@@ -281,53 +308,56 @@
     <!-- MOST COMMON TESTS -->
     <div style="background-color: #ebebeb;">
         <div class="container pt-5 py-4">
-            <div class="h5 text-center text-secondary p-2">TEST CATEGORIES</div>
-            <div class="row mt-2 text-center h6 text-secondary" style="margin: auto 0px;padding: 50px;">
-                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3 bg-white" style="padding: 60px 50px; width: 150px;" 
-                    src="" alt="img">
-                    <p>THYROID</p>
+            <div class="h5 text-center mb-4 text-secondary p-2">TEST CATEGORIES</div>
+            <div class="row text-center text-secondary">
+               
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3 col-6 h4 gradient">
+                    <div id="test-size" class="shadow rounded-3" style="padding: 70px 0;">LIVER</div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3 bg-white" style="padding: 60px 50px;" 
-                    src="" alt="img">
-                    <p>HEART</p>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3 col-6 h4 gradient">
+                    <div id="test-size" class="shadow rounded-3" style="padding: 70px 0;">HEART</div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3 bg-white" style="padding: 60px 50px;" 
-                    src="" alt="img">
-                    <p>LUNGS</p>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3 col-6 h4 gradient">
+                    <div id="test-size" class="shadow rounded-3" style="padding: 70px 0;">LUNGS</div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3 bg-white" style="padding: 60px 50px;" 
-                    src="" alt="img">
-                    <p>LIVER</p>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3 col-6 h4 gradient">
+                    <div id="test-size" class="shadow rounded-3" style="padding: 70px 0;">LIVER</div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3 bg-white" style="padding: 60px 50px;" 
-                    src="" alt="img">
-                    <p>KIDNEY</p>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3 col-6 h4 gradient">
+                    <div id="test-size" class="shadow rounded-3" style="padding: 70px 0;">KIDNEY</div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12"><img class="shadow rounded my-3 bg-white" style="padding: 60px 50px;" 
-                    src="" alt="img">
-                    <p>INFERTILITY</p>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3 col-6 h4 gradient">
+                    <div id="test-size" class="shadow rounded-3" style="padding: 70px 0;">INFERTILITY</div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- contact buttons -->
     <div>
         <div class="shadow">
             <a href="#">
-                <i id="phone-button" style="z-index:1;position: fixed;padding:12px 15px;font-size: 32px; background-color:#097edd;color: white;border-radius: 100%;"
+                <i id="phone-button"
+                    style="z-index:1;position: fixed;padding:12px 15px;font-size: 32px; background-color:#097edd;color: white;border-radius: 100%;"
                     class="shadow card fa fa-phone">
                 </i>
             </a>
         </div>
         <div class="shadow">
             <a href="#">
-                <i id="whatsapp-button" style="z-index:1;position: fixed;padding:8px 10px;font-size: 40px; background-color:#25D366;color: white;border-radius: 100%;"
+                <i id="whatsapp-button"
+                    style="z-index:1;position: fixed;padding:8px 10px;font-size: 40px; background-color:#25D366;color: white;border-radius: 100%;"
                     class="shadow card fa fa-whatsapp">
                 </i>
             </a>
         </div>
     </div>
-    
-    </body>
+
+</body>
+
 </html>

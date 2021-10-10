@@ -1,6 +1,5 @@
 .head {
     background-color: #a81d5e;
-    padding: 10px 10%;
 }
 
 body {
@@ -46,6 +45,10 @@ body {
     display: none;
 }
 #extra-alert-message{
+    display: none;
+}
+
+#loginIcon {
     display: none;
 }
 
@@ -119,6 +122,12 @@ body {
     border-radius: none;
 }
 
+.gradient {
+    background: linear-gradient(to right, #a81d5e,#c52f75, #069cc1, #097edd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 @media screen and (min-width: 600px) {
     #display {
         display: inline-block;
@@ -135,7 +144,6 @@ body {
     #hidden-menu {
         display: none;
     }
-    
     #mob-nav-height {
         padding: 15px;
     }
@@ -143,7 +151,7 @@ body {
         width: 150px;
     }
     .head {
-        padding: 20px 130px;
+        padding: 20px 10%;
         height: auto;
     }
     #mobile-right-navbar{
@@ -167,7 +175,7 @@ body {
         right: 45px;
     }
     #carouselExampleIndicators{
-        margin: 0 15%;
+        margin: 0 20%;
     }
     #carousel{
         padding: 20px 0;
@@ -176,8 +184,7 @@ body {
         width: 86%;
         margin: auto;
         border-radius: 5px;
-    }
-    
+    }  
 }
 
 @media screen and (max-width: 560px) {
@@ -241,13 +248,87 @@ body {
     
 }
 
-@media screen and (max-width: 390px) {
-    
-    #mobile-right-navbar{
+/* For mobile devices - L, M, S */
+@media (max-width: 430px) {
+    .hideLocationText {
+        display: none;
+    }
+
+    .custom {
+        line-height:20px !important;
+        width: 100%;
+        font-size: 12px !important;
+    }
+
+    #login{
         margin-left: 0;
         margin-top: 10px;
         display: none;
     }
+
+    #hidden-menu {
+        margin-top: 3px;
+    }
+
+    .head {
+        padding: 3px !important;
+        height: 65px;
+    }
     
+    #cartBtn {
+        margin-top: 0px !important;
+    }
+    #logo123 {
+        font-size: 18px !important;
+        padding: 0 !important;
+        margin-bottom: 0px !important;
+    }
+
+    #cartItem {
+        padding: 0px 10px;
+    }
+    
+    #test-size {
+        padding: 50px 0 !important;
+    }
+
+    #loginIcon {
+        display: inline-block;
+        padding: 0;
+    }
+    #mob-show-bt-menu {
+        display: block;
+        top: 65px !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    #display{
+        display: none;
+    }
+
+    #hidden-menu {
+        display: inline-block;
+    }
+
+    /* #logo123 {
+        font-size: 20px !important;
+    } */
+
+    .head {
+        padding: 20px 9%;
+    }
+
+    #display2 .nav-item{
+        padding: 10px 5px !important;
+    }
+
+    #more {
+        display: inline-block;
+    }
+    #extra-alert-message {
+        display: none;
+    }
     
 }
