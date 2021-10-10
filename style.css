@@ -52,6 +52,10 @@ body {
     display: none;
 }
 
+#reportsIcon {
+    display: none;
+}
+
 #more {
     display: inline-block;
 }
@@ -188,6 +192,14 @@ body {
         margin: auto;
         border-radius: 5px;
     }  
+}
+
+@media (min-width:375px) and (max-width:430px) {
+    #reportsIcon {
+        display: inline-block;
+        padding: 0;
+        padding-right: 9px;
+    }
 }
 
 @media screen and (max-width: 560px) {
