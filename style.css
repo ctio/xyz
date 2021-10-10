@@ -126,6 +126,7 @@ body {
     background: linear-gradient(to right, #a81d5e,#c52f75, #069cc1, #097edd);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 @media screen and (min-width: 600px) {
